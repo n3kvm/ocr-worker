@@ -1,0 +1,7 @@
+REMITENTE = "WF-BATCH@comfandi.com.co"
+
+CARPETA_DESTINO = "Brillaseo"
+
+INTERVALO = 30
+
+PALABRA = "BRILLASEO"

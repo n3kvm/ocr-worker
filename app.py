@@ -18,7 +18,11 @@ def home():
     }
 
 
+from fastapi import HTTPException
+
 @app.post("/leerpdf")
 def procesar_pdf(data: PDFRequest):
-
-    return leer_pdf(data.pdf)
+    try:
+        return leer_pdf(data.pdf)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
